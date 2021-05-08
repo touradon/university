@@ -292,9 +292,9 @@ a:hover {
 @font-face {
     font-family: "iconfont";
     /* Project id 2530521 */
-    src: url('/fonts/iconfont.woff2?t=1620348552468') format('woff2'),
-        url('/fonts/iconfont.woff?t=1620348552468') format('woff'),
-        url('/fonts/iconfont.ttf?t=1620348552468') format('truetype');
+    src: url('../fonts/iconfont.woff2?t=1620348552468') format('woff2'),
+        url('../fonts/iconfont.woff?t=1620348552468') format('woff'),
+        url('../fonts/iconfont.ttf?t=1620348552468') format('truetype');
 }
 
 .iconfont {
@@ -344,7 +344,7 @@ a:hover {
 
 /*headtop*/
 #headtop {
-    background: #C11025 url(/images/head-bg.jpg) no-repeat center;
+    background: #C11025 url(../images/head-bg.jpg) no-repeat center;
 }
 
 .headtop .top-left {
@@ -458,7 +458,7 @@ a:hover {
     padding: 30px 30px 100px 30px;
     background-color: #fff;
     border-top: 6px solid #C11025;
-    background-image: url(/images/crest.png);
+    background-image: url(../images/crest.png);
     background-repeat: no-repeat;
     background-position: 90% 90%;
     background-size: 90px 52px;
