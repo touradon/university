@@ -745,6 +745,12 @@ a:hover {
 .news_tu .news_list li.news .news_text a{
     color: #898989;
     line-height: 1.5;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .news_tu .news_list li.news .news_imgs,
 .news_tu .news_text{
