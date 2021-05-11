@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	document.onreadystatechange = function(){ 
+		if(document.readyState == "complete"){ 
+			// loading();
+			console.log("loaded");
+		}
+	}
+
 	// header
 	function autoheader(){
 		if( $(window).scrollTop() > 0 ){
