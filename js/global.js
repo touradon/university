@@ -1,7 +1,17 @@
 $(document).ready(function () {
+
+	function loading(){
+		// $("#loadindex").fadeOut(400);
+		
+		//强制隐藏启动画面
+		setTimeout(function(){
+			$("#loading").fadeOut(400);
+		},3000)
+	}
+
 	document.onreadystatechange = function(){ 
 		if(document.readyState == "complete"){ 
-			// loading();
+			loading();
 			console.log("loaded");
 		}
 	}
