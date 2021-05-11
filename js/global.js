@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	// loading效果
 	function loading(){
-		$("#loadindex").fadeOut(400);
+		$("#loading").fadeOut(400);
 		
 		//强制隐藏启动画面
 		// setTimeout(function(){
