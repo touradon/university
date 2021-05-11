@@ -893,9 +893,7 @@ a:hover {
 /* section1 */
 .section1 {
   padding: 141px 0 45px 0;
-  /* background: url(../images/bg-1.jpg) no-repeat center; */
-  background-repeat: no-repeat;
-    background-position: center;
+  background: url(../images/bg-1.jpg) no-repeat center;
     background-size: cover;
 }
 
