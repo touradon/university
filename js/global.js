@@ -8,13 +8,13 @@ $(document).ready(function () {
 			$("#loading").fadeOut(400);
 		},3000)
 	}
-
-	document.onreadystatechange = function(){ 
-		if(document.readyState == "complete"){ 
-			loading();
-			console.log("loaded");
-		}
-	}
+	loading();
+	// document.onreadystatechange = function(){ 
+	// 	if(document.readyState == "complete"){ 
+	// 		loading();
+	// 		console.log("loaded");
+	// 	}
+	// }
 
 	// header
 	function autoheader(){
