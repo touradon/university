@@ -8,12 +8,66 @@
         content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
     <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <title>临沂大学</title>
 </head>
 
 <body>
+    <!-- 浏览器兼容性提示 -->
+    <div id="browser-modal">
+        <div class="browser-modal-cover">
+        </div>
+        <div class="browser-content">
+            <div class="browser-text">
+                <div class="browser-dpc-logo">
+                    <img src="images/logo-red.png" alt="">
+                </div>
+                <h3 class="browser-text-title">请升级浏览器版本</h3>
+                <p class="browser-text-desc">
+            你正在使用旧版本浏览器。请升级浏览器以获得更好的体验。
+                </p>
+            </div>
+            <div class="browser-list">
+                <div class="browser-item">
+                    <a href="https://www.google.cn/intl/zh-CN/chrome/" target="_blank">
+                        <div class="iconfont icon-chrome">
+                    </div>
+                    <h4>Chrome</h4>
+                    </a>
+                </div>
+                <div class="browser-item">
+                    <a href="http://www.firefox.com.cn/" target="_blank">
+                        <div class="iconfont icon-firefox"></div>
+                        <h4>Firefox</h4>
+                    </a>
+                </div>
+                <div class="browser-item">
+                    <a href="https://www.apple.com.cn/safari/" target="_blank">
+                    <div class="iconfont icon-safari">
+                    </div>
+                    <h4>Safari</h4>
+                    </a>
+                </div>
+                <div class="browser-item">
+                    <a href="https://www.microsoft.com/zh-cn/edge" target="_blank">
+                    <div class="iconfont icon-edge">
+                    </div>
+                    <h4>Edge</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE","")) <=9){
+                document.getElementById('browser-modal').style.display='block';
+                console.log("您的浏览器版本过低，请使用IE10以上版本");
+        }
+        </script>
+    </div>
+
+
     <div class="ld-header">
         <!-- Start | HeadTop -->
         <div class="wrapper headtop" id="headtop">
@@ -55,7 +109,6 @@
             <div class="inner clearfix">
                 <div class="logo">
                     <a class="logo-white" href=""><img src="images/logo.png" alt=""></a>
-                    <a class="logo-red" href=""><img src="images/logo-red.png" alt=""></a>
                 </div>
                 <div class="nav wp-navi" id="nav">
                     <div class="wp-panel">
@@ -193,7 +246,6 @@
                 </div>
             </div>
         </div>
-
         <!-- End | Nav & Banner -->
     </div>
 
@@ -204,233 +256,205 @@
         </div>
     </div>
 
-    <!-- 临大要闻 -->
-    <div class="section1 wrapper">
-        <div class="inner">
-            <div class="">
-                <div class="tt clearfix">
-                    <h3 class="tit">
-                        <span class="title" frag="标题">
-                            <i class="iconfont icon-jianzhu"></i>
-                            <span class="title-zh" frag="标题内容">临大要闻</span>
-                            <i class="title-en">FOCUS NEWS</i>
-                        </span>
-                    </h3>
-                </div>
-                <div class="con news_tu">
-                    <ul class="news_list clearfix">
-                        <li class="news clearfix">
-                            <div class="news_imgs">
-                                <a href="" title="">
-                                    <img src="upload/post-1.png">
-                                </a>
-                            </div>
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">省委第九巡视组巡视临沂大学党委工作动员会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">根据省委关于巡视工作的统一部署，近日，省委第九巡视组巡视临沂大学党委工作动员会召开。会前，省委第九巡视组组长张宝泉主持召...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news clearfix">
-                            <div class="news_imgs">
-                                <a href="" title="">
-                                    <img src="upload/post-1.png">
-                                </a>
-                            </div>
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news clearfix">
-                            <div class="news_imgs">
-                                <a href="" title="">
-                                    <img src="upload/post-1.png">
-                                </a>
-                            </div>
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con  clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news clearfix">
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con  clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news clearfix">
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news clearfix">
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con  clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news clearfix">
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news clearfix">
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news clearfix">
-                            <div class="news_list_con clearfix">
-                                <div class="news_wz">
-                                    <div class="news_con clearfix">
-                                        <div class="news_title">
-                                            <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                        </div>
-                                        <div class="news_text">
-                                            <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="news_date">
-                                    <span class="iconfont icon-shijian"></span>
-                                    <span class="news_year">2021-05-07</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="more_btn white_btn" frag="按钮" type="更多">
-                    <span class="more_text" frag="按钮内容">查看更多</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- FixTop -->
+    <div class="fix-top"></div>
 
-    <!-- 综合新闻 -->
-    <div class="section2 wrapper">
-        <div class="inner clearfix">
-            <div class="ml">
-                <div>
-                    <div class="tt ld-tt clearfix">
-                        <h3 class="tit">
-                            <span class="title" frag="标题">
-                                <i class="iconfont icon-xinwen"></i>
-                                <span class="title-zh" frag="标题内容">综合新闻</span>
-                                <i class="title-en">General News</i>
-                            </span>
-                        </h3>
-                        <div class="more_btn" frag="按钮" type="更多">
-                            <span class="more_text" frag="按钮内容">查看更多</span>
+    <div class="fix-body">
+        <div class="ld-header2">
+            <!-- Start | HeadTop -->
+            <div class="wrapper headtop" id="headtop">
+                <div class="inner">
+                    <div class="mod clearfix">
+                        <!--头部信息-->
+                        <div class="top-left">
+                            <div class="site-rale">
+                                <ul class="clearfix">
+                                    <li class="links"><a href="">在校学生</a> </li>
+                                    <li class="links"><a href="">教职工</a> </li>
+                                    <li class="links"><a href="">校友</a> </li>
+                                    <li class="links"><a href="">访客</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="top-right">
+                            <div class="site-lang">
+                                <ul class="clearfix">
+                                    <li class="links"><a href="">数字校园</a></li>
+                                    <li class="links"><a href="">图书服务</a></li>
+                                    <li class="links"><a href="">校园地图</a></li>
+                                    <li class="links"><a href="">校长信箱</a></li>
+                                    <li class="links"><a href="">ENGLISH</a></li>
+                                </ul>
+                                <ul class="clearfix">
+                                    <!-- <li class="links"><a href=""> <span class="iconfont icon-diqiu"></span> EN</a></li> -->
+                                    <li class="links"><a href=""><span class="iconfont icon-chaxun"></span></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- End | HeadTop -->
+    
+            <!-- Star | Nav & Banner -->
+            <div class="wrapper nav-wrap">
+                <div class="inner clearfix">
+                    <div class="logo">
+                        <a class="logo-red" href=""><img src="images/logo-red.png" alt=""></a>
+                    </div>
+                    <div class="nav wp-navi" id="nav">
+                        <div class="wp-panel">
+                            <div class="wp-window">
+                                <div class="navi-slide-head clearfix">
+                                    <h3 class="navi-slide-title">导航</h3>
+                                    <a class="navi-slide-arrow"></a>
+                                </div>
+                                <ul class="wp-menu clearfix">
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="">学校概况</a>
+                                        <div class="sub-menu-box clearfix">
+                                            <div class="clearfix">
+                                                <ul class="sub-menu l">
+                                                    <li class="sub-item"><a class="sub-link" href="">临大简介</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">现任领导</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">学校标识</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">校园风景</a></li>
+                                                </ul>
+                                                <div class="sub-menu-pic r">
+                                                    <img src="images/navbg1.jpg" alt="">
+                                                    <p>CAMPUS SERVICE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="">组织机构</a>
+                                        <div class="sub-menu-box clearfix">
+                                            <div class="clearfix">
+                                                <ul class="sub-menu l">
+                                                    <li class="sub-item"><a class="sub-link" href="">管理机构</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">教学机构</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">科研机构</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">直属机构</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">教辅机构</a></li>
+                                                </ul>
+                                                <div class="sub-menu-pic r">
+                                                    <img src="images/navbg2.jpg" alt="">
+                                                    <p>CAMPUS SERVICE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="">教育教学</a>
+                                        <div class="sub-menu-box clearfix">
+                                            <div class="clearfix">
+                                                <ul class="sub-menu l">
+                                                    <li class="sub-item"><a class="sub-link" href="">本专科生教育</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">研究生教育</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">留学生教育</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">继续教育</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">创新创业教育</a></li>
+                                                </ul>
+                                                <div class="sub-menu-pic r">
+                                                    <img src="images/navbg3.jpg" alt="">
+                                                    <p>CAMPUS SERVICE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="">科学研究</a>
+                                        <div class="sub-menu-box clearfix">
+                                            <div class="clearfix">
+                                                <ul class="sub-menu l">
+                                                    <li class="sub-item"><a class="sub-link" href="">社会科学</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">自然科学</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">学术期刊</a></li>
+                                                </ul>
+                                                <div class="sub-menu-pic r">
+                                                    <img src="images/navbg4.jpg" alt="">
+                                                    <p>CAMPUS SERVICE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="">合作交流</a>
+                                        <div class="sub-menu-box clearfix">
+                                            <div class="clearfix">
+                                                <ul class="sub-menu l">
+                                                    <li class="sub-item"><a class="sub-link" href="">合作发展</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">国际交流</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">校友工作</a></li>
+                                                </ul>
+                                                <div class="sub-menu-pic r">
+                                                    <img src="images/navbg7.jpg" alt="">
+                                                    <p>CAMPUS SERVICE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="">招生就业</a>
+                                        <div class="sub-menu-box">
+                                            <div class="clearfix">
+                                                <ul class="sub-menu l">
+                                                    <li class="sub-item"><a class="sub-link" href="">本专科生招生</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">研究生招生</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">留学生招生</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">继续教育招生</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">本专科生就业</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">研究生就业</a></li>
+                                                </ul>
+                                                <div class="sub-menu-pic r">
+                                                    <img src="images/navbg6.jpg" alt="">
+                                                    <p>CAMPUS SERVICE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="">校园服务</a>
+                                        <div class="sub-menu-box clearfix">
+                                            <div class="clearfix">
+                                                <ul class="sub-menu l">
+                                                    <li class="sub-item"><a class="sub-link" href="">校园文化</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">校园安全</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">教务服务</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">财务服务</a></li>
+                                                    <li class="sub-item"><a class="sub-link" href="">校历</a></li>
+                                                </ul>
+                                                <div class="sub-menu-pic r">
+                                                    <img src="images/navbg5.jpg" alt="">
+                                                    <p>CAMPUS SERVICE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End | Nav & Banner -->
+        </div>
 
+
+        <!-- 临大要闻 -->
+        <div class="section1 wrapper">
+            <div class="inner">
+                <div class="">
+                    <div class="tt clearfix">
+                        <h3 class="tit">
+                            <span class="title" frag="标题">
+                                <i class="iconfont icon-jianzhu"></i>
+                                <span class="title-zh" frag="标题内容">临大要闻</span>
+                                <i class="title-en">FOCUS NEWS</i>
+                            </span>
+                        </h3>
+                    </div>
                     <div class="con news_tu">
                         <ul class="news_list clearfix">
                             <li class="news clearfix">
@@ -443,10 +467,34 @@
                                     <div class="news_wz">
                                         <div class="news_con clearfix">
                                             <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
+                                                <a href="" title="">省委第九巡视组巡视临沂大学党委工作动员会</a>
                                             </div>
                                             <div class="news_text">
-                                                <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
+                                                <a href=""
+                                                    title="">根据省委关于巡视工作的统一部署，近日，省委第九巡视组巡视临沂大学党委工作动员会召开。会前，省委第九巡视组组长张宝泉主持召...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news_date">
+                                        <span class="iconfont icon-shijian"></span>
+                                        <span class="news_year">2021-05-07</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news clearfix">
+                                <div class="news_imgs">
+                                    <a href="" title="">
+                                        <img src="upload/post-3.png">
+                                    </a>
+                                </div>
+                                <div class="news_list_con clearfix">
+                                    <div class="news_wz">
+                                        <div class="news_con clearfix">
+                                            <div class="news_title">
+                                                <a href="" title="">共青团临沂大学第三次代表大会召开</a>
+                                            </div>
+                                            <div class="news_text">
+                                                <a href="" title="">4月25日，中国共产主义青年团临沂大学第三次代表大会召开。共青团山东省委副书记尚胜波、共青团临沂市委副书记于珊珊、青岛大...
                                                 </a>
                                             </div>
                                         </div>
@@ -460,18 +508,34 @@
                             <li class="news clearfix">
                                 <div class="news_imgs">
                                     <a href="" title="">
-                                        <img src="upload/post-1.png">
+                                        <img src="upload/post-2.png">
                                     </a>
                                 </div>
                                 <div class="news_list_con clearfix">
                                     <div class="news_wz">
-                                        <div class="news_con clearfix">
+                                        <div class="news_con  clearfix">
                                             <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
+                                                <a href="" title="">学校召开2021届毕业生就业工作推进会</a>
                                             </div>
                                             <div class="news_text">
-                                                <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
+                                                <a href=""
+                                                    title="">4月26日下午，2021届毕业生就业工作推进会暨学生工作部署会在校友中心召开，校党委委员、副校长张立富出席会议并讲话...
                                                 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news_date">
+                                        <span class="iconfont icon-shijian"></span>
+                                        <span class="news_year">2021-05-07</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news clearfix">
+                                <div class="news_list_con clearfix">
+                                    <div class="news_wz">
+                                        <div class="news_con  clearfix">
+                                            <div class="news_title">
+                                                <a href="" title="">临沂大学2021年田径运动会精彩开幕</a>
                                             </div>
                                         </div>
                                     </div>
@@ -486,11 +550,22 @@
                                     <div class="news_wz">
                                         <div class="news_con clearfix">
                                             <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
+                                                <a href="" title="">学校召开网络与信息安全工作会议</a>
                                             </div>
-                                            <div class="news_text">
-                                                <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                                </a>
+                                        </div>
+                                    </div>
+                                    <div class="news_date">
+                                        <span class="iconfont icon-shijian"></span>
+                                        <span class="news_year">2021-05-07</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news clearfix">
+                                <div class="news_list_con clearfix">
+                                    <div class="news_wz">
+                                        <div class="news_con  clearfix">
+                                            <div class="news_title">
+                                                <a href="" title="">国家教育行政学院党委书记侯慧君来校调研</a>
                                             </div>
                                         </div>
                                     </div>
@@ -505,11 +580,22 @@
                                     <div class="news_wz">
                                         <div class="news_con clearfix">
                                             <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
+                                                <a href="" title="">学校举办党史学习教育专题报告会</a>
                                             </div>
-                                            <div class="news_text">
-                                                <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                                </a>
+                                        </div>
+                                    </div>
+                                    <div class="news_date">
+                                        <span class="iconfont icon-shijian"></span>
+                                        <span class="news_year">2021-05-07</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news clearfix">
+                                <div class="news_list_con clearfix">
+                                    <div class="news_wz">
+                                        <div class="news_con  clearfix">
+                                            <div class="news_title">
+                                                <a href="" title="">我校师生热议习近平总书记在清华大学考察时的重要讲话</a>
                                             </div>
                                         </div>
                                     </div>
@@ -524,68 +610,7 @@
                                     <div class="news_wz">
                                         <div class="news_con clearfix">
                                             <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                            </div>
-                                            <div class="news_text">
-                                                <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="news_date">
-                                        <span class="iconfont icon-shijian"></span>
-                                        <span class="news_year">2021-05-07</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="news clearfix">
-                                <div class="news_list_con clearfix">
-                                    <div class="news_wz">
-                                        <div class="news_con clearfix">
-                                            <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                            </div>
-                                            <div class="news_text">
-                                                <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="news_date">
-                                        <span class="iconfont icon-shijian"></span>
-                                        <span class="news_year">2021-05-07</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="news clearfix">
-                                <div class="news_list_con clearfix">
-                                    <div class="news_wz">
-                                        <div class="news_con clearfix">
-                                            <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                            </div>
-                                            <div class="news_text">
-                                                <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="news_date">
-                                        <span class="iconfont icon-shijian"></span>
-                                        <span class="news_year">2021-05-07</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="news clearfix">
-                                <div class="news_list_con clearfix">
-                                    <div class="news_wz">
-                                        <div class="news_con clearfix">
-                                            <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                            </div>
-                                            <div class="news_text">
-                                                <a href="" title="">5月7日上午，学校80周年校庆工作推进会在沂蒙大讲堂一楼报告厅召开，学校党委委员、副校长孙常生主持会议并...
-                                                </a>
+                                                <a href="" title="">临沂大学大学生退役军人协会成立</a>
                                             </div>
                                         </div>
                                     </div>
@@ -597,528 +622,696 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="more_btn white_btn wow animate__fadeInUp" data-wow-duration="1s" frag="按钮" type="更多">
+                        <span class="more_text" frag="按钮内容">查看更多</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 综合新闻 -->
+        <div class="section2 wrapper">
+            <div class="inner clearfix">
+                <div class="ml wow animate__fadeInLeft" data-wow-duration="1.5s">
+                    <div>
+                        <div class="tt ld-tt clearfix">
+                            <h3 class="tit">
+                                <span class="title" frag="标题">
+                                    <i class="iconfont icon-xinwen"></i>
+                                    <span class="title-zh" frag="标题内容">综合新闻</span>
+                                    <i class="title-en">General News</i>
+                                </span>
+                            </h3>
+                            <div class="more_btn" frag="按钮" type="更多">
+                                <span class="more_text" frag="按钮内容">查看更多</span>
+                            </div>
+                        </div>
+
+                        <div class="con news_tu">
+                            <ul class="news_list clearfix">
+                                <li class="news clearfix">
+                                    <div class="news_imgs">
+                                        <a href="" title="">
+                                            <img src="upload/post-1.png">
+                                        </a>
+                                    </div>
+                                    <div class="news_list_con clearfix">
+                                        <div class="news_wz">
+                                            <div class="news_con clearfix">
+                                                <div class="news_title">
+                                                    <a href="" title="">省委第九巡视组巡视临沂大学党委工作动员会</a>
+                                                </div>
+                                                <div class="news_text">
+                                                    <a href=""
+                                                        title="">根据省委关于巡视工作的统一部署，近日，省委第九巡视组巡视临沂大学党委工作动员会召开。会前，省委第九巡视组组长张宝泉主持召...
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_date">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="news_year">2021-05-07</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news clearfix">
+                                    <div class="news_imgs">
+                                        <a href="" title="">
+                                            <img src="upload/post-1.png">
+                                        </a>
+                                    </div>
+                                    <div class="news_list_con clearfix">
+                                        <div class="news_wz">
+                                            <div class="news_con clearfix">
+                                                <div class="news_title">
+                                                    <a href="" title="">校长张书圣参加生物技术系党支部主题党日活动</a>
+                                                </div>
+                                                <div class="news_text">
+                                                    <a href=""
+                                                        title="">3月24日，党委副书记、校长张书圣同志以普通党员身份参加生命科学学院生物技术系党支部...
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_date">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="news_year">2021-05-07</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news clearfix">
+                                    <div class="news_list_con clearfix">
+                                        <div class="news_wz">
+                                            <div class="news_con clearfix">
+                                                <div class="news_title">
+                                                    <a href="" title="">临沂大学2021年田径运动会精彩开幕</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_date">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="news_year">2021-05-07</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news clearfix">
+                                    <div class="news_list_con clearfix">
+                                        <div class="news_wz">
+                                            <div class="news_con clearfix">
+                                                <div class="news_title">
+                                                    <a href="" title="">中国网报道学校构建“临沂共识” 思政教育...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_date">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="news_year">2021-05-07</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news clearfix">
+                                    <div class="news_list_con clearfix">
+                                        <div class="news_wz">
+                                            <div class="news_con clearfix">
+                                                <div class="news_title">
+                                                    <a href="" title="">我校在山东省第六届大学生艺术展演活动...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_date">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="news_year">2021-05-07</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news clearfix">
+                                    <div class="news_list_con clearfix">
+                                        <div class="news_wz">
+                                            <div class="news_con clearfix">
+                                                <div class="news_title">
+                                                    <a href="" title="">学校一项山东省标准化试点项目通过省级验...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_date">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="news_year">2021-05-07</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news clearfix">
+                                    <div class="news_list_con clearfix">
+                                        <div class="news_wz">
+                                            <div class="news_con clearfix">
+                                                <div class="news_title">
+                                                    <a href="" title="">我校辅导员在全国高校思想政治工作优...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_date">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="news_year">2021-05-07</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news clearfix">
+                                    <div class="news_list_con clearfix">
+                                        <div class="news_wz">
+                                            <div class="news_con clearfix">
+                                                <div class="news_title">
+                                                    <a href="" title="">临沂大学大学生援疆实习支教启动仪式在...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_date">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="news_year">2021-05-07</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mr  wow animate__fadeInRight animate__delay-2s" data-wow-duration="2.2s">
+                    <div class="tt ld-tt clearfix">
+                        <h3 class="tit">
+                            <span class="title" frag="标题">
+                                <i class="iconfont icon-laba"></i>
+                                <span class="title-zh" frag="标题内容">信息公告</span>
+                                <i class="title-en">Notice</i>
+                            </span>
+                        </h3>
+                        <div class="more_btn" frag="按钮" type="更多">
+                            <span class="more_text" frag="按钮内容">查看更多</span>
+                        </div>
+                    </div>
+
+                    <div class="ld-notice">
+                        <ul class="post-news clearfix">
+                            <li class="news-item item-1 clearfix">
+                                <div class="news_time">
+                                    <span class="pubdate-day">09</span>
+                                    <span class="pubdate-month">2021-04</span>
+                                </div>
+                                <div class="meta-title">
+                                    <a href="" title="">临沂大学80周年校庆公告（第二号）</a>
+                                </div>
+                            </li>
+                            <li class="news-item item-1 clearfix">
+                                <div class="news_time">
+                                    <span class="pubdate-day">01</span>
+                                    <span class="pubdate-month">2021-04</span>
+                                </div>
+                                <div class="meta-title">
+                                    <a href="" title="">临沂大学2021年公开招聘工作人员简章（长期招聘岗位）</a>
+                                </div>
+                            </li>
+                            <li class="news-item item-1 clearfix">
+                                <div class="news_time">
+                                    <span class="pubdate-day">12</span>
+                                    <span class="pubdate-month">2021-04</span>
+                                </div>
+                                <div class="meta-title">
+                                    <a href="" title="">临沂大学80周年校庆徽标正式发布</a>
+                                </div>
+                            </li>
+                            <li class="news-item item-1 clearfix">
+                                <div class="news_time">
+                                    <span class="pubdate-day">07</span>
+                                    <span class="pubdate-month">2021-04</span>
+                                </div>
+                                <div class="meta-title">
+                                    <a href="" title="">临沂大学2021年诚聘海内外高层次人才启事</a>
+                                </div>
+                            </li>
+                            <li class="news-item item-1 clearfix">
+                                <div class="news_time">
+                                    <span class="pubdate-day">02</span>
+                                    <span class="pubdate-month">2021-04</span>
+                                </div>
+                                <div class="meta-title">
+                                    <a href="" title="">临沂大学80周年校庆公告（第一号）</a>
+                                </div>
+                            </li>
+                            <li class="news-item item-1 clearfix">
+                                <div class="news_time">
+                                    <span class="pubdate-day">01</span>
+                                    <span class="pubdate-month">2021-04</span>
+                                </div>
+                                <div class="meta-title">
+                                    <a href="" title="">国务院“互联网+督察”</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
 
                 </div>
             </div>
-            <div class="mr">
-                <div class="tt ld-tt clearfix">
-                    <h3 class="tit">
+        </div>
+
+        <!-- 临大学术 -->
+        <div class="section3 wrapper">
+            <div class="inner">
+                <div class="tt clearfix">
+                    <h3 class="tit wow animate__fadeInDown" data-wow-duration="1s">
                         <span class="title" frag="标题">
-                            <i class="iconfont icon-laba"></i>
-                            <span class="title-zh" frag="标题内容">信息公告</span>
-                            <i class="title-en">Notice</i>
+                            <i class="iconfont icon-boshi"></i>
+                            <span class="title-zh" frag="标题内容">临大学术</span>
+                            <i class="title-en">learning</i>
                         </span>
                     </h3>
-                    <div class="more_btn" frag="按钮" type="更多">
-                        <span class="more_text" frag="按钮内容">查看更多</span>
-                    </div>
                 </div>
 
-                <div class="ld-notice">
-                    <ul class="post-news clearfix">
-                        <li class="news-item item-1 clearfix">
-                            <div class="news_time">
-                              <span class="pubdate-day">09</span>
-                              <span class="pubdate-month">2021-04</span>
+                <div class="con news_tu">
+                    <ul class="news_list clearfix wow animate__fadeInUp" data-wow-duration="1.5s">
+                        <li class="news">
+                            <div class="news_imgs">
+                                <a href="" title="">
+                                    <img src="upload/post-1.png">
+                                </a>
                             </div>
-                            <div class="meta-title">
-                              <a href="" title="">临沂大学80周年校庆公告（第二号）</a>
-                            </div>
-                        </li>
-                        <li class="news-item item-1 clearfix">
-                            <div class="news_time">
-                              <span class="pubdate-day">09</span>
-                              <span class="pubdate-month">2021-04</span>
-                            </div>
-                            <div class="meta-title">
-                              <a href="" title="">临沂大学80周年校庆公告（第二号）</a>
-                            </div>
-                        </li>
-                        <li class="news-item item-1 clearfix">
-                            <div class="news_time">
-                              <span class="pubdate-day">09</span>
-                              <span class="pubdate-month">2021-04</span>
-                            </div>
-                            <div class="meta-title">
-                              <a href="" title="">临沂大学80周年校庆公告（第二号）</a>
-                            </div>
-                        </li>
-                        <li class="news-item item-1 clearfix">
-                            <div class="news_time">
-                              <span class="pubdate-day">09</span>
-                              <span class="pubdate-month">2021-04</span>
-                            </div>
-                            <div class="meta-title">
-                              <a href="" title="">临沂大学80周年校庆公告（第二号）</a>
-                            </div>
-                        </li>
-                        <li class="news-item item-1 clearfix">
-                            <div class="news_time">
-                              <span class="pubdate-day">09</span>
-                              <span class="pubdate-month">2021-04</span>
-                            </div>
-                            <div class="meta-title">
-                              <a href="" title="">临沂大学80周年校庆公告（第二号）</a>
-                            </div>
-                        </li>
-                        <li class="news-item item-1 clearfix">
-                            <div class="news_time">
-                              <span class="pubdate-day">09</span>
-                              <span class="pubdate-month">2021-04</span>
-                            </div>
-                            <div class="meta-title">
-                              <a href="" title="">临沂大学80周年校庆公告（第二号）</a>
-                            </div>
-                        </li>
-                      </ul>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <!-- 临大学术 -->
-    <div class="section3 wrapper">
-        <div class="inner">
-            <div class="tt clearfix">
-                <h3 class="tit">
-                    <span class="title" frag="标题">
-                        <i class="iconfont icon-boshi"></i>
-                        <span class="title-zh" frag="标题内容">临大学术</span>
-                        <i class="title-en">learning</i>
-                    </span>
-                </h3>
-            </div>
-
-            <div class="con news_tu">
-                <ul class="news_list clearfix">
-                    <li class="news">
-                        <div class="news_imgs">
-                            <a href="" title="">
-                                <img src="upload/post-1.png">
-                            </a>
-                        </div>
-                        <div class="news_list_con clearfix">
-                            <div class="news_wz">
-                                <div class="news_con">
-                                    <div class="news_title">
-                                        <a href="" title="">中央“马工程”首席专家刘先春教授来我校作报告</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_date">
-                                <span class="iconfont icon-shijian"></span>
-                                <span class="news_year">2021-05-07</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="news">
-                        <div class="news_imgs">
-                            <a href="" title="">
-                                <img src="upload/post-1.png">
-                            </a>
-                        </div>
-                        <div class="news_list_con clearfix">
-                            <div class="news_wz">
-                                <div class="news_con">
-                                    <div class="news_title">
-                                        <a href="" title="">省属高校宣讲团党的十九届五中全会精神系列报告会举行</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_date">
-                                <span class="iconfont icon-shijian"></span>
-                                <span class="news_year">2021-05-07</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="news">
-                        <div class="news_imgs">
-                            <a href="" title="">
-                                <img src="upload/post-1.png">
-                            </a>
-                        </div>
-                        <div class="news_list_con clearfix">
-                            <div class="news_wz">
-                                <div class="news_con">
-                                    <div class="news_title">
-                                        <a href="" title="">临沂市委书记王安德来校作党的十九届五中全会精神报告</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_date">
-                                <span class="iconfont icon-shijian"></span>
-                                <span class="news_year">2021-05-07</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="news">
-                        <div class="news_imgs">
-                            <a href="" title="">
-                                <img src="upload/post-1.png">
-                            </a>
-                        </div>
-                        <div class="news_list_con clearfix">
-                            <div class="news_wz">
-                                <div class="news_con">
-                                    <div class="news_title">
-                                        <a href="" title="">我院辅导员胡秀俊做十九届五中全会精神宣讲报告</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_date">
-                                <span class="iconfont icon-shijian"></span>
-                                <span class="news_year">2021-05-07</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="news">
-                        <div class="news_imgs">
-                            <a href="" title="">
-                                <img src="upload/post-1.png">
-                            </a>
-                        </div>
-                        <div class="news_list_con clearfix">
-                            <div class="news_wz">
-                                <div class="news_con">
-                                    <div class="news_title">
-                                        <a href="" title="">临沂市委书记王安德来校作党的十九届五中全会精神报告</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news_date">
-                                <span class="iconfont icon-shijian"></span>
-                                <span class="news_year">2021-05-07</span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="more_btn white_btn" frag="按钮" type="更多">
-                <span class="more_text" frag="按钮内容">查看更多</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tab -->
-    <div class="section4 wrapper">
-        <div class="inner">
-            <div class="mod clearfix">
-                <div class="sudy-tab">
-                    <ul class="tab-menu clearfix">
-                      <li class="tab-name n1 selected">活力临大</li>
-                      <li class="tab-name n2">媒体临大</li>
-                      <li class="tab-name n3">视频临大</li>
-                      <li class="tab-name n4">临大校报</li>
-                    </ul>
-                    <ul class="tab-list clearfix">
-                        <li class="tab-con c1">
-                            <div class="con news_tu">
-                                <ul class="news_list clearfix">
-                                    <li class="news clearfix">
-                                        <div class="news_imgs">
-                                            <a href="" title="">
-                                                <img src="upload/post-4.jpg">
-                                            </a>
-                                            <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                            </div>
+                            <div class="news_list_con clearfix">
+                                <div class="news_wz">
+                                    <div class="news_con">
+                                        <div class="news_title">
+                                            <a href="" title="">中央“马工程”首席专家刘先春教授来我校作报告</a>
                                         </div>
-                                    </li>
-                                    <li class="news clearfix">
-                                        <div class="news_imgs">
-                                            <a href="" title="">
-                                                <img src="upload/post-4.jpg">
-                                            </a>
-                                            <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="news_date">
+                                    <span class="iconfont icon-shijian"></span>
+                                    <span class="news_year">2021-05-07</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news">
+                            <div class="news_imgs">
+                                <a href="" title="">
+                                    <img src="upload/post-1.png">
+                                </a>
+                            </div>
+                            <div class="news_list_con clearfix">
+                                <div class="news_wz">
+                                    <div class="news_con">
+                                        <div class="news_title">
+                                            <a href="" title="">省属高校宣讲团党的十九届五中全会精神系列报告会举行</a>
                                         </div>
-                                    </li>
-                                    <li class="news clearfix">
-                                        <div class="news_imgs">
-                                            <a href="" title="">
-                                                <img src="upload/post-4.jpg">
-                                            </a>
-                                            <div class="news_title">
-                                                <a href="" title="">学校召开80周年校庆工作推进会</a>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="news_date">
+                                    <span class="iconfont icon-shijian"></span>
+                                    <span class="news_year">2021-05-07</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news">
+                            <div class="news_imgs">
+                                <a href="" title="">
+                                    <img src="upload/post-1.png">
+                                </a>
+                            </div>
+                            <div class="news_list_con clearfix">
+                                <div class="news_wz">
+                                    <div class="news_con">
+                                        <div class="news_title">
+                                            <a href="" title="">临沂市委书记王安德来校作党的十九届五中全会精神报告</a>
                                         </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
+                                <div class="news_date">
+                                    <span class="iconfont icon-shijian"></span>
+                                    <span class="news_year">2021-05-07</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news">
+                            <div class="news_imgs">
+                                <a href="" title="">
+                                    <img src="upload/post-1.png">
+                                </a>
+                            </div>
+                            <div class="news_list_con clearfix">
+                                <div class="news_wz">
+                                    <div class="news_con">
+                                        <div class="news_title">
+                                            <a href="" title="">我院辅导员胡秀俊做十九届五中全会精神宣讲报告</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_date">
+                                    <span class="iconfont icon-shijian"></span>
+                                    <span class="news_year">2021-05-07</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news">
+                            <div class="news_imgs">
+                                <a href="" title="">
+                                    <img src="upload/post-1.png">
+                                </a>
+                            </div>
+                            <div class="news_list_con clearfix">
+                                <div class="news_wz">
+                                    <div class="news_con">
+                                        <div class="news_title">
+                                            <a href="" title="">临沂市委书记王安德来校作党的十九届五中全会精神报告</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_date">
+                                    <span class="iconfont icon-shijian"></span>
+                                    <span class="news_year">2021-05-07</span>
+                                </div>
                             </div>
                         </li>
                     </ul>
-                    <div class="more_btn" frag="按钮" type="更多">
-                        <span class="more_text" frag="按钮内容">查看更多</span>
+                </div>
+                <div class="more_btn white_btn wow animate__fadeInUp" data-wow-duration="1.5s" frag="按钮" type="更多">
+                    <span class="more_text" frag="按钮内容">查看更多</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab -->
+        <div class="section4 wrapper">
+            <div class="inner">
+                <div class="mod clearfix">
+                    <div class="sudy-tab">
+                        <ul class="tab-menu clearfix wow animate__fadeInDown" data-wow-duration="1s">
+                            <li class="tab-name n1 selected">活力临大</li>
+                            <li class="tab-name n2">媒体临大</li>
+                            <li class="tab-name n3">视频临大</li>
+                            <li class="tab-name n4">临大校报</li>
+                        </ul>
+                        <ul class="tab-list clearfix wow animate__fadeInUp" data-wow-duration="2s">
+                            <li class="tab-con c1">
+                                <div class="con news_tu">
+                                    <ul class="news_list clearfix">
+                                        <li class="news clearfix">
+                                            <div class="news_imgs">
+                                                <a href="" title="">
+                                                    <img src="upload/post-4.jpg">
+                                                </a>
+                                                <div class="news_title">
+                                                    <a href="" title="">军训时刻</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="news clearfix">
+                                            <div class="news_imgs">
+                                                <a href="" title="">
+                                                    <img src="upload/post-4.jpg">
+                                                </a>
+                                                <div class="news_title">
+                                                    <a href="" title="">篮球比赛</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="news clearfix">
+                                            <div class="news_imgs">
+                                                <a href="" title="">
+                                                    <img src="upload/post-4.jpg">
+                                                </a>
+                                                <div class="news_title">
+                                                    <a href="" title="">校园活动</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="more_btn wow animate__fadeInUp" data-wow-duration="1.5s" frag="按钮" type="更多">
+                            <span class="more_text" frag="按钮内容">查看更多</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- 沂蒙精神 -->
-    <div class="section5 wrapper">
-        <div class="inner">
-            <div class="sripit-title"></div>
-            <div class="con news_tu">
-                <ul class="news_list clearfix">
-                    <li class="news clearfix">
-                        <div class="news_imgs">
-                            <a href="" title="">
-                                <img src="upload/post-5.jpg">
-                            </a>
-                            <div class="news_con">
-                                <div class="news_title">
-                                    <a href="" title="">习近平:“沂蒙精神要大力弘扬”</a>
+        <!-- 沂蒙精神 -->
+        <div class="section5 wrapper">
+            <div class="inner">
+                <div class="sripit-title wow animate__fadeInLeft" data-wow-duration="1s"></div>
+                <div class="con news_tu">
+                    <ul class="news_list clearfix">
+                        <li class="news clearfix wow animate__fadeInLeft animate__delay-1s" data-wow-duration="2s">
+                            <div class="news_imgs">
+                                <a href="" title="">
+                                    <img src="upload/post-5.jpg">
+                                </a>
+                                <div class="news_con">
+                                    <div class="news_title">
+                                        <a href="" title="">习近平:“沂蒙精神要大力弘扬”</a>
+                                    </div>
+                                    <div class="news_text">
+                                        <a href=""
+                                            title="">2013年11月25日，习近平来到位于山东省临沂市的华东革命烈士陵园，向革命烈士纪念塔敬献花篮，并参观沂蒙精神展。在“山东人民抗日武装起义示意图”“沂蒙人民支前统计表”等展示前，他详细询问沂蒙地区革命战争历史。他表示，历史不能忘记，回想当年峥嵘岁月，我们很受教育。</a>
+                                    </div>
                                 </div>
-                                <div class="news_text">
-                                    <a href="" title="">2013年11月25日，习近平来到位于山东省临沂市的华东革命烈士陵园，向革命烈士纪念塔敬献花篮，并参观沂蒙精神展。在“山东人民抗日武装起义示意图”“沂蒙人民支前统计表”等展示前，他详细询问沂蒙地区革命战争历史。他表示，历史不能忘记，回想当年峥嵘岁月，我们很受教育。</a>
-                                </div>
+
                             </div>
-                            
-                        </div>
-                    </li>
-                    <li class="news clearfix">
-                        <div class="news_imgs">
-                            <a href="" title="">
-                                <img src="upload/post-6.jpg">
-                            </a>
-                        </div>
-                    </li>
-                    <li class="news clearfix">
-                        <div class="news_imgs">
-                            <a href="" title="">
-                                <img src="upload/post-7.jpg">
-                            </a>
-                            <div class="news_con">
-                                <div class="news_text">
-                                    <a href="" title="">沂蒙精神是红色革命精神之一  ，是临沂人民在长期的革命和建设实践中形成的先进群体意识，是中华民族优秀文化的重要组成部分，是临沂人民乃至全国人民宝贵的精神财富。</a>
-                                </div>
+                        </li>
+                        <li class="news clearfix wow animate__fadeInLeft animate__delay-2s" data-wow-duration="2.2s">
+                            <div class="news_imgs">
+                                <a href="" title="">
+                                    <img src="upload/post-6.jpg">
+                                </a>
                             </div>
-                           
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                        </li>
+                        <li class="news clearfix wow animate__fadeInRight animate__delay-3s" data-wow-duration="3s">
+                            <div class="news_imgs">
+                                <a href="" title="">
+                                    <img src="upload/post-7.jpg">
+                                </a>
+                                <div class="news_con">
+                                    <div class="news_text">
+                                        <a href="" title="">沂蒙精神是红色革命精神之一
+                                            ，是临沂人民在长期的革命和建设实践中形成的先进群体意识，是中华民族优秀文化的重要组成部分，是临沂人民乃至全国人民宝贵的精神财富。</a>
+                                    </div>
+                                </div>
 
-    <!-- 入读临大 -->
-    <div class="section6 wrapper admission">
-        <div class="inner">
-            <div class="adm-title">
-                <p class="">ADMISSIONS</p>
-                <h3>入读临大</h3>
-            </div>
-            <div class="adm-text">
-                <p>临沂大学是山东省属普通高校，山东省特色名校，山东省应用型本科高校建设首批支持高校、国家发改委“产教融合”项目重点建设高校，坐落在历史文化名城、商贸物流之都、滨水生态之城、红色旅游城市、全国文明城市——山东省临沂市。</p>
-            </div>
-            <ul class="adm-list clearfix">
-                <li class="adm-item adm-item1">
-                    <span></span>
-                    <h4>6000亩</h4>
-                    <p>占地约6000亩，在沂水、费县设分校区，校舍面积114余万平方米</p>
-                </li>
-                <li class="adm-item adm-item2">
-                    <span></span>
-                    <h4>369万册</h4>
-                    <p>馆藏纸质文献369万册，中外文电子图书218万种，电子期刊6万余种，中外...</p>
-                </li>
-                <li class="adm-item adm-item3">
-                    <span></span>
-                    <h4>82个</h4>
-                    <p>开设83个本科专业，涵盖11大学科门类，其中国家级特色专业2个...</p>
-                </li>
-                <li class="adm-item adm-item4">
-                    <span></span>
-                    <h4>2690人</h4>
-                    <p>现有教职工2690人，其中专任教师2025人，具有博士学位的教职工707人</p>
-                </li>
-                <li class="adm-item adm-item5">
-                    <span></span>
-                    <h4>44605人</h4>
-                    <p>全日制在校生44605人，其中硕士研究生211人、本科生28167人、专科生12632人</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- 临大校训 -->
-    <div class="section7 wrapper motto">
-        <div class="inner">
-            <ul class="motto-list clearfix">
-                <li class="motto-item">
-                    <h4>明义</h4>
-                    <p>deep righteousness</p>
-                </li>
-                <li class="motto-item">
-                    <h4>锐思</h4>
-                    <p>sharp ideology</p>
-                </li>
-                <li class="motto-item motto-item-img">
-                    <img src="images/logo.png" alt="临沂大学">
-                </li>
-                <li class="motto-item">
-                    <h4>弘毅</h4>
-                    <p>strong will</p>
-                </li>
-                <li class="motto-item">
-                    <h4>致远</h4>
-                    <p>lofty ambitions</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- 外部链接 -->
-    <div class="section8 wrapper">
-        <div class="xiaohui">
-            <span></span>
-        </div>
-        <div class="inner">
-            <ul class="ld-links clearfix">
-                <li class="ld-links-item">
-                    <a href="">
-                        <img src="upload/links-1.jpg" alt="">
-                    </a>
-                </li>
-                <li class="ld-links-item">
-                    <a href="">
-                        <img src="upload/links-2.jpg" alt="">
-                    </a>
-                </li>
-                <li class="ld-links-item">
-                    <a href="">
-                        <img src="upload/links-3.jpg" alt="">
-                    </a>
-                </li>
-                <li class="ld-links-item">
-                    <a href="">
-                        <img src="upload/links-4.jpg" alt="">
-                    </a>
-                </li>
-                <li class="ld-links-item">
-                    <a href="">
-                        <img src="upload/links-5.jpg" alt="">
-                    </a>
-                </li>
-            </ul>
-            
-            <ul class="links-menu">
-                <li class="links-menu-item">
-                    <a href="">新闻</a>
-                </li>
-                <li class="links-menu-item">
-                    <a href="">招生</a>
-                </li>
-                <li class="links-menu-item">
-                    <a href="">招聘</a>
-                </li>
-                <li class="links-menu-item">
-                    <a href="">捐赠</a>
-                </li>
-                <li class="links-menu-item">
-                    <a href="">地图</a>
-                </li>
-                <li class="links-menu-item">
-                    <a href="">校历</a>
-                </li>
-                <li class="links-menu-item">
-                    <a href="">特写</a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="wrapper ld-footer">
-        <div class="inner clearfix">
-            <div class="ml">
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
-                </div> 
-                <div class="site-info">
-                    <p>
-                        <span>地址：山东省临沂市双岭路中段</span>
-                        <span>邮编：276000</span>
-                    </p>
-                    <p>
-                        <span>招生电话：0539-7258777</span>
-                        <span>就业咨询电话：0539-7258666</span>
-                    </p>
-                   <p>
-                        <span>版权所有©临沂大学</span>
-                        <span>鲁ICP备15042953号-1</span>
-                   </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="mr">
-                <ul class="site-link clearfix">
-                    <li class="site-link-item">
-                        <a href="javascript:void(0)">相关链接</a>
-                        <ul class="sub-site-link">
-                            <li class="sub-site-item">
-                                <a href="">人民网山东频道</a>
-                            </li>
-                            <li class="sub-site-item">
-                                <a href="">齐鲁晚报教育频道</a>
-                            </li>
-                            <li class="sub-site-item">
-                                <a href="">山东省教育厅</a>
-                            </li>
-                            <li class="sub-site-item">
-                                <a href="">教育部全国青少年普法网</a>
-                            </li>
-                        </ul>
+        </div>
+
+        <!-- 入读临大 -->
+        <div class="section6 wrapper admission">
+            <div class="inner">
+                <div class="adm-title">
+                    <p class="wow animate__fadeInDown" data-wow-duration="1s">ADMISSIONS</p>
+                    <h3 class="wow animate__fadeInDown" data-wow-duration="2s">入读临大</h3>
+                </div>
+                <div class="adm-text wow animate__fadeInDown" data-wow-duration="2.5s">
+                    <p>临沂大学是山东省属普通高校，山东省特色名校，山东省应用型本科高校建设首批支持高校、国家发改委“产教融合”项目重点建设高校，坐落在历史文化名城、商贸物流之都、滨水生态之城、红色旅游城市、全国文明城市——山东省临沂市。
+                    </p>
+                </div>
+                <ul class="adm-list clearfix">
+                    <li class="adm-item adm-item1 wow animate__fadeInUp" data-wow-duration="0.8s">
+                        <span></span>
+                        <h4>6000亩</h4>
+                        <p>占地约6000亩，在沂水、费县设分校区，校舍面积114余万平方米</p>
                     </li>
-                    <li class="site-link-item">
-                        <a href="javascript:void(0)">高校链接</a>
-                        <ul class="sub-site-link">
-                            <li class="sub-site-item">
-                                <a href="">人民网山东频道</a>
-                            </li>
-                            <li class="sub-site-item">
-                                <a href="">齐鲁晚报教育频道</a>
-                            </li>
-                            <li class="sub-site-item">
-                                <a href="">山东省教育厅</a>
-                            </li>
-                            <li class="sub-site-item">
-                                <a href="">教育部全国青少年普法网</a>
-                            </li>
-                        </ul>
+                    <li class="adm-item adm-item2 wow animate__fadeInUp" data-wow-duration="1.2s">
+                        <span></span>
+                        <h4>369万册</h4>
+                        <p>馆藏纸质文献369万册，中外文电子图书218万种，电子期刊6万余种，中外...</p>
                     </li>
-                    <li class="site-link-item site-link-item-1">
-                        <div class="ewm-pic">
-                            <img src="upload/ewm.jpg" alt="">
-                        </div>
-                        <p>微信</p>
+                    <li class="adm-item adm-item3 wow animate__fadeInUp" data-wow-duration="1.6s">
+                        <span></span>
+                        <h4>82个</h4>
+                        <p>开设83个本科专业，涵盖11大学科门类，其中国家级特色专业2个...</p>
                     </li>
-                    <li class="site-link-item site-link-item-1">
-                        <div class="ewm-pic">
-                            <img src="upload/ewm.jpg" alt="">
-                        </div>
-                        <p>微博</p>
+                    <li class="adm-item adm-item4 wow animate__fadeInUp" data-wow-duration="2s">
+                        <span></span>
+                        <h4>2690人</h4>
+                        <p>现有教职工2690人，其中专任教师2025人，具有博士学位的教职工707人</p>
+                    </li>
+                    <li class="adm-item adm-item5 wow animate__fadeInUp" data-wow-duration="2.4s">
+                        <span></span>
+                        <h4>44605人</h4>
+                        <p>全日制在校生44605人，其中硕士研究生211人、本科生28167人、专科生12632人</p>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
 
+        <!-- 临大校训 -->
+        <div class="section7 wrapper motto">
+            <div class="inner">
+                <ul class="motto-list clearfix">
+                    <li class="motto-item">
+                        <h4>明义</h4>
+                        <p>deep righteousness</p>
+                    </li>
+                    <li class="motto-item">
+                        <h4>锐思</h4>
+                        <p>sharp ideology</p>
+                    </li>
+                    <li class="motto-item motto-item-img">
+                        <img src="images/logo.png" alt="临沂大学">
+                    </li>
+                    <li class="motto-item">
+                        <h4>弘毅</h4>
+                        <p>strong will</p>
+                    </li>
+                    <li class="motto-item">
+                        <h4>致远</h4>
+                        <p>lofty ambitions</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 外部链接 -->
+        <div class="section8 wrapper">
+            <div class="xiaohui">
+                <span></span>
+            </div>
+            <div class="inner">
+                <ul class="ld-links clearfix wow animate__fadeInUp" data-wow-duration="2s">
+                    <li class="ld-links-item">
+                        <a href="">
+                            <img src="upload/links-1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="ld-links-item">
+                        <a href="">
+                            <img src="upload/links-2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="ld-links-item">
+                        <a href="">
+                            <img src="upload/links-3.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="ld-links-item">
+                        <a href="">
+                            <img src="upload/links-4.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="ld-links-item">
+                        <a href="">
+                            <img src="upload/links-5.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="links-menu">
+                    <li class="links-menu-item">
+                        <a href="">新闻</a>
+                    </li>
+                    <li class="links-menu-item">
+                        <a href="">招生</a>
+                    </li>
+                    <li class="links-menu-item">
+                        <a href="">招聘</a>
+                    </li>
+                    <li class="links-menu-item">
+                        <a href="">捐赠</a>
+                    </li>
+                    <li class="links-menu-item">
+                        <a href="">地图</a>
+                    </li>
+                    <li class="links-menu-item">
+                        <a href="">校历</a>
+                    </li>
+                    <li class="links-menu-item">
+                        <a href="">特写</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="wrapper ld-footer">
+            <div class="inner clearfix">
+                <div class="ml">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="site-info">
+                        <p>
+                            <span>地址：山东省临沂市双岭路中段</span>
+                            <span>邮编：276000</span>
+                        </p>
+                        <p>
+                            <span>招生电话：0539-7258777</span>
+                            <span>就业咨询电话：0539-7258666</span>
+                        </p>
+                        <p>
+                            <span>版权所有©临沂大学</span>
+                            <span>鲁ICP备15042953号-1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="mr">
+                    <ul class="site-link clearfix">
+                        <li class="site-link-item">
+                            <a href="javascript:void(0)">相关链接</a>
+                            <ul class="sub-site-link">
+                                <li class="sub-site-item">
+                                    <a href="">人民网山东频道</a>
+                                </li>
+                                <li class="sub-site-item">
+                                    <a href="">齐鲁晚报教育频道</a>
+                                </li>
+                                <li class="sub-site-item">
+                                    <a href="">山东省教育厅</a>
+                                </li>
+                                <li class="sub-site-item">
+                                    <a href="">教育部全国青少年普法网</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="site-link-item">
+                            <a href="javascript:void(0)">高校链接</a>
+                            <ul class="sub-site-link">
+                                <li class="sub-site-item">
+                                    <a href="">人民网山东频道</a>
+                                </li>
+                                <li class="sub-site-item">
+                                    <a href="">齐鲁晚报教育频道</a>
+                                </li>
+                                <li class="sub-site-item">
+                                    <a href="">山东省教育厅</a>
+                                </li>
+                                <li class="sub-site-item">
+                                    <a href="">教育部全国青少年普法网</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="site-link-item site-link-item-1">
+                            <div class="ewm-pic">
+                                <img src="upload/ewm.jpg" alt="">
+                            </div>
+                            <p>微信</p>
+                        </li>
+                        <li class="site-link-item site-link-item-1">
+                            <div class="ewm-pic">
+                                <img src="upload/ewm.jpg" alt="">
+                            </div>
+                            <p>微博</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/global.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.banner-wrap').slick({
-                dots: true,
-                adaptiveHeight: true
-            });
-        });
+
     </script>
 </body>
 

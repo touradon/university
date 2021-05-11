@@ -225,6 +225,9 @@ legend {
 
 body {
     height: 100vh;
+    -webkit-font-smoothing:antialiased;
+    /* overflow-x: hidden;
+    overflow-x: auto; */
 }
 
 /*css3扩展*/
@@ -290,13 +293,11 @@ a:hover {
 
 /* 字体 */
 @font-face {
-    font-family: "iconfont";
-    /* Project id 2530521 */
-    src: url('../fonts/iconfont.woff2?t=1620348552468') format('woff2'),
-        url('../fonts/iconfont.woff?t=1620348552468') format('woff'),
-        url('../fonts/iconfont.ttf?t=1620348552468') format('truetype');
-}
-
+    font-family: "iconfont"; /* Project id 2530521 */
+    src: url('../fonts/iconfont.woff2?t=1620694202217') format('woff2'),
+         url('../fonts/iconfont.woff?t=1620694202217') format('woff'),
+         url('../fonts/iconfont.ttf?t=1620694202217') format('truetype');
+  }
 .iconfont {
     font-family: "iconfont" !important;
     font-size: 16px;
@@ -305,33 +306,56 @@ a:hover {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-diqiu:before {
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-edge:before {
+    content: "\e615";
+  }
+  
+  .icon-chrome:before {
+    content: "\e6c4";
+  }
+  
+  .icon-safari:before {
+    content: "\ef00";
+  }
+  
+  .icon-firefox:before {
+    content: "\e616";
+  }
+  
+  .icon-diqiu:before {
     content: "\e600";
-}
-
-.icon-boshi:before {
+  }
+  
+  .icon-boshi:before {
     content: "\e655";
-}
-
-.icon-xinwen:before {
+  }
+  
+  .icon-xinwen:before {
     content: "\e6a1";
-}
-
-.icon-chaxun:before {
+  }
+  
+  .icon-chaxun:before {
     content: "\e65d";
-}
-
-.icon-laba:before {
+  }
+  
+  .icon-laba:before {
     content: "\e608";
-}
-
-.icon-shijian:before {
+  }
+  
+  .icon-shijian:before {
     content: "\e605";
-}
-
-.icon-jianzhu:before {
+  }
+  
+  .icon-jianzhu:before {
     content: "\e62e";
-}
+  }
 
 /* ld-header */
 .ld-header {
@@ -341,35 +365,51 @@ a:hover {
     right: 0;
     z-index: 999;
     transition: all .3s ease;
+    opacity: 0;
+    transform: translateY(-100%);
 }
-.logo .logo-red {
-    display: none;
+.ld-header.showdiv {
+    transform: none;
+    opacity: 1;
 }
-.ld-header.showdiv{
-    top: -41px;
-} 
-.ld-header.showdiv .nav-wrap{
+.ld-header2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: all .3s ease;
+}
+
+.ld-header2 .nav-wrap {
     background: #FFFFFF;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
-} 
-.ld-header.showdiv .nav-wrap .inner{
+}
+
+.ld-header2 .nav-wrap .inner {
     height: 100px;
-} 
-.ld-header.showdiv .nav {
+}
+
+.ld-header2 .nav {
     padding-top: 25px;
 }
-.ld-header.showdiv .wp-menu .menu-item a.menu-link {
+
+.ld-header2 .nav .wp-menu .menu-item a.menu-link {
     color: #333;
 }
-.ld-header.showdiv  .wp-menu .menu-item a.menu-link:after {
+
+.ld-header2 .nav .wp-menu .menu-item a.menu-link:after {
     background: #C11025;
 }
-.ld-header.showdiv .logo .logo-white{
-    display: none;
-} 
-.ld-header.showdiv .logo .logo-red{
-    display: block;
-} 
+.fix-body.showdiv .ld-header2 {
+    transition: all 0.7s ease-in-out 0.5s;
+    transform: none;
+    opacity: 1;
+}
+.fix-body .ld-header2 {
+    opacity: 0;
+    transform: translateY(-100%);
+}
 
 /*headtop*/
 #headtop {
@@ -408,10 +448,11 @@ a:hover {
 }
 
 /* LOGO */
-.ld-header .logo {
+.ld-header .logo, .ld-header2 .logo {
     padding-top: 10px;
 }
-.ld-header .logo img{
+
+.ld-header .logo img, .ld-header2 .logo img {
     height: 80px;
 }
 
@@ -433,7 +474,6 @@ a:hover {
     opacity: .7;
     filter: alpha(opacity=70);
 }
-
 /*导航样式：后台绑定时也可以定义配置*/
 .nav {
     float: right;
@@ -566,10 +606,13 @@ a:hover {
 }
 
 /* ld-banner */
-.banner {
-    height: 100vh;
+.banner{
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
 }
-
 .banner .slick-next {
     right: 0;
 }
@@ -817,7 +860,7 @@ a:hover {
 
 /* section1 */
 .section1 {
-    padding: 45px 0;
+    padding: 141px 0 45px 0;
     background: url(../images/bg-1.jpg) no-repeat center;
     background-size: cover;
 }
@@ -1468,3 +1511,42 @@ a:hover {
 .site-link-item-1 {
     width: 174px;
 }
+
+/* fix-top */
+.fix-top {
+    padding-top: 100vh;
+    position: relative;
+    transition: all .7s cubic-bezier(.5, 0, .2, 1) 0s;
+    -webkit-transition: all .7s cubic-bezier(.5, 0, .2, 1) 0s;
+    -moz-transition: all .7s cubic-bezier(.5, 0, .2, 1) 0s;
+    -ms-transition: all .7s cubic-bezier(.5, 0, .2, 1) 0s;
+    -o-transition: all .7s cubic-bezier(.5, 0, .2, 1) 0s;
+    z-index: -1
+}
+.fix-top.fixed {
+    padding-top: 0;
+}
+body.fixed{overflow:hidden}
+.fix-body {
+    position: relative;
+    background-color: #fff;
+}
+.fixedok .banner {opacity:0;}
+
+
+#browser-modal{width:100%;height:100%;top:0;left:0;text-align:center;color:#303233;position:fixed;z-index:9999;display: none;}
+#browser-modal .browser-modal-cover{position:fixed;left:0;top:0;height:100%;width:100%;background-color:#111;opacity:.9;z-index:-1;}
+#browser-modal .browser-content{width:700px;margin-top:120px;margin-left:auto;margin-right:auto;padding-bottom:80px;padding-top:30px;background-color:#fff;border-radius:5px;}
+#browser-modal .browser-content .browser-dpc-logo img{height:62px;margin:45px auto 30px;}
+#browser-modal .browser-content .browser-text-title{text-transform:uppercase;font-size:24px;}
+#browser-modal .browser-content .browser-text-desc{margin-top:30px;margin-bottom:40px;font-size:14px;}
+#browser-modal .browser-content .browser-list{width:600px;margin:40px auto;height:130px;}
+#browser-modal .browser-content .browser-item{float:left;width:150px;padding-top:20px;padding-bottom:20px;margin-left:auto;margin-right:auto;}
+#browser-modal .browser-content .browser-item .iconfont{width:80px;height:80px;margin:0 auto;font-size:80px;line-height:80px;margin-bottom:30px;}
+#browser-modal .browser-content .browser-item a{color: #C11025 ; cursor:pointer;display:block;}
+#browser-modal .browser-content .browser-item a img{display:block;margin:0 auto;max-width:100px;width:100px;height:100px;}
+#browser-modal .browser-content .browser-item a h4{text-align:center;margin-top:20px;font-size:18px;font-weight:700;}
+
+
+
+
