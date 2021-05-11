@@ -38,7 +38,7 @@ $(document).ready(function () {
 		wow.init();
 	};
 
-
+	// 窗口滚动
 	$(window).bind('mousewheel', function (event, delta, deltaX, deltaY) {
 		var scrollTop = $(window).scrollTop();
 		if (scrollTop == 0 && $('.fix-top').hasClass('fixed') && deltaY >= 0) {
