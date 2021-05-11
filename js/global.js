@@ -85,7 +85,4 @@ $(document).ready(function () {
 		document.getElementById('browser-modal').style.display = 'block';
 		console.log("您的浏览器版本过低，请使用IE10以上版本");
 	}
-
-	
-
 });
