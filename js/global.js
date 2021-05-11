@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	// header
 	function autoheader(){
-		if($(window).scrollTop() > 0){
+		if( $(window).scrollTop() > 0 ){
 			$(".ld-header").removeClass("showdiv");
 			$(".fix-body").addClass("showdiv");
 		}

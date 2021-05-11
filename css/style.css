@@ -403,7 +403,7 @@ a:hover {
     background: #C11025;
 }
 .fix-body.showdiv .ld-header2 {
-    transition: all 0.7s ease-in-out 0.5s;
+    transition: all 0.7s ease-in-out;
     transform: none;
     opacity: 1;
 }
@@ -1549,6 +1549,9 @@ body.fixed{overflow:hidden}
 #browser-modal .browser-content .browser-item a{color: #C11025 ; cursor:pointer;display:block;}
 #browser-modal .browser-content .browser-item a img{display:block;margin:0 auto;max-width:100px;width:100px;height:100px;}
 #browser-modal .browser-content .browser-item a h4{text-align:center;margin-top:20px;font-size:18px;font-weight:700;}
+
+
+
 
 
 
