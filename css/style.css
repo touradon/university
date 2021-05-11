@@ -449,11 +449,11 @@ a:hover {
 
 /* LOGO */
 .ld-header .logo, .ld-header2 .logo {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .ld-header .logo img, .ld-header2 .logo img {
-    height: 80px;
+    height: 70px;
 }
 
 
