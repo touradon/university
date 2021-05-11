@@ -261,8 +261,8 @@
 
     <div class="banner">
         <div class="banner-wrap">
-            <div><a href=""><img src="upload/banner.jpg" alt=""></a></div>
-            <div><a href=""><img src="upload/banner2.jpg" alt=""></a></div>
+            <div><a href=""><img class="lazy" src="upload/banner.jpg" alt=""></a></div>
+            <div><a href=""><img class="lazy" src="upload/banner2.jpg" alt=""></a></div>
         </div>
     </div>
 
@@ -453,7 +453,7 @@
 
 
         <!-- 临大要闻 -->
-        <div class="section1 wrapper">
+        <div class="section1 wrapper lazy" data-original="images/bg-1.jpg">
             <div class="inner">
                 <div class="">
                     <div class="tt clearfix">
@@ -470,7 +470,7 @@
                             <li class="news clearfix">
                                 <div class="news_imgs">
                                     <a href="" title="">
-                                        <img src="upload/post-1.png">
+                                        <img class="lazy" data-original="upload/post-1.png" width="440" height="224">
                                     </a>
                                 </div>
                                 <div class="news_list_con clearfix">
@@ -640,7 +640,7 @@
         </div>
 
         <!-- 综合新闻 -->
-        <div class="section2 wrapper">
+        <div class="section2 wrapper lazy" data-original="images/bg-2.jpg">
             <div class="inner clearfix">
                 <div class="ml wow animate__fadeInLeft" data-wow-duration="1.5s">
                     <div>
@@ -662,7 +662,7 @@
                                 <li class="news clearfix">
                                     <div class="news_imgs">
                                         <a href="" title="">
-                                            <img src="upload/post-1.png">
+                                            <img class="lazy"  data-original="upload/post-1.png" width="435" height="222">
                                         </a>
                                     </div>
                                     <div class="news_list_con clearfix">
@@ -883,7 +883,7 @@
         </div>
 
         <!-- 临大学术 -->
-        <div class="section3 wrapper">
+        <div class="section3 wrapper lazy" data-original="images/bg-3.jpg">
             <div class="inner">
                 <div class="tt clearfix">
                     <h3 class="tit wow animate__fadeInDown" data-wow-duration="1s">
@@ -1006,7 +1006,7 @@
         </div>
 
         <!-- Tab -->
-        <div class="section4 wrapper">
+        <div class="section4 wrapper lazy" data-original="images/bg-4.jpg">
             <div class="inner">
                 <div class="mod clearfix">
                     <div class="sudy-tab">
@@ -1063,7 +1063,7 @@
         </div>
 
         <!-- 沂蒙精神 -->
-        <div class="section5 wrapper">
+        <div class="section5 wrapper lazy" data-original="images/bg-5.jpg">
             <div class="inner">
                 <div class="sripit-title wow animate__fadeInLeft" data-wow-duration="1s"></div>
                 <div class="con news_tu">
@@ -1112,7 +1112,7 @@
         </div>
 
         <!-- 入读临大 -->
-        <div class="section6 wrapper admission">
+        <div class="section6 wrapper admission lazy" data-original="images/bg-6.jpg">
             <div class="inner">
                 <div class="adm-title">
                     <p class="wow animate__fadeInDown" data-wow-duration="1s">ADMISSIONS</p>
@@ -1153,7 +1153,7 @@
         </div>
 
         <!-- 临大校训 -->
-        <div class="section7 wrapper motto">
+        <div class="section7 wrapper motto lazy" data-original="images/bg-7.jpg">
             <div class="inner">
                 <ul class="motto-list clearfix">
                     <li class="motto-item">
@@ -1315,11 +1315,26 @@
             </div>
         </div>
     </div>
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <!-- <script src="js/jquery.lazyload.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
     <script src="js/global.js"></script>
+    <script>
+        $(document).ready(function(){
+            //背景图片懒加载
+            $("div.lazy").lazyload({
+                effect: "show",
+                threshold: 300
+            });
+            $("img.lazy").lazyload({
+                effect: "fadeIn"
+            });
+        })
+    </script>
 </body>
 
 </html>

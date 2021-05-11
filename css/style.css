@@ -893,8 +893,10 @@ a:hover {
 /* section1 */
 .section1 {
   padding: 141px 0 45px 0;
-  background: url(../images/bg-1.jpg) no-repeat center;
-  background-size: cover;
+  /* background: url(../images/bg-1.jpg) no-repeat center; */
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section1 .news_tu .news_list li.news .news_wz {
@@ -959,8 +961,10 @@ a:hover {
 /* section2 */
 .section2 {
   padding: 45px 0;
-  background: url(../images/bg-2.jpg) no-repeat center;
-  background-size: cover;
+  /* background: url(../images/bg-2.jpg) no-repeat center; */
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section2 .ml {
@@ -1077,9 +1081,11 @@ a:hover {
 
 /* section3 */
 .section3 {
-  background: url(../images/bg-3.jpg) no-repeat center;
-  background-size: cover;
+  /* background: url(../images/bg-3.jpg) no-repeat center; */
   padding: 104px 0 116px;
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section3 .news_tu .news_list {
@@ -1121,8 +1127,10 @@ a:hover {
 /* section4 */
 .section4 {
   padding: 50px 0;
-  background: url(../images/bg-4.jpg) no-repeat center;
-  background-size: cover;
+  /* background: url(../images/bg-4.jpg) no-repeat center; */
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section4 .sudy-tab {
@@ -1196,8 +1204,10 @@ a:hover {
 /* section5 */
 .section5 {
   padding: 160px 0 187px 0;
-  background: url(../images/bg-5.jpg) no-repeat center;
-  background-size: cover;
+  /* background: url(../images/bg-5.jpg) no-repeat center; */
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section5 .inner {
@@ -1273,8 +1283,10 @@ a:hover {
 /* section6 */
 .section6 {
   padding: 60px 0 50px;
-  background: url(../images/bg-6.jpg) no-repeat center;
-  background-size: cover;
+  /* background: url(../images/bg-6.jpg) no-repeat center; */
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section6 .adm-title {
@@ -1359,8 +1371,10 @@ a:hover {
 /* section7 */
 .section7 {
   padding: 46px 0;
-  background: url(../images/bg-7.jpg) no-repeat center;
-  background-size: cover;
+  /* background: url(../images/bg-7.jpg) no-repeat center; */
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section7 .motto-list {

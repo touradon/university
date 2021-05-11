@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+	// loading效果
 	function loading(){
 		// $("#loadindex").fadeOut(400);
 		
@@ -37,7 +37,6 @@ $(document).ready(function () {
 	$('.banner-wrap').slick({
 		dots: true,
 		adaptiveHeight: true,
-		lazyLoad: 'progressive',
 		autoplay: true,
 		autoplaySpeed: 4000
 	});
@@ -86,4 +85,7 @@ $(document).ready(function () {
 		document.getElementById('browser-modal').style.display = 'block';
 		console.log("您的浏览器版本过低，请使用IE10以上版本");
 	}
+
+	
+
 });
