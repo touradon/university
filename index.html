@@ -261,8 +261,8 @@
 
     <div class="banner">
         <div class="banner-wrap">
-            <div><a href=""><img class="lazy" src="upload/banner.jpg" alt=""></a></div>
-            <div><a href=""><img class="lazy" src="upload/banner2.jpg" alt=""></a></div>
+            <div><a href=""><img src="upload/banner.jpg" alt=""></a></div>
+            <div><a href=""><img src="upload/banner2.jpg" alt=""></a></div>
         </div>
     </div>
 
@@ -470,7 +470,7 @@
                             <li class="news clearfix">
                                 <div class="news_imgs">
                                     <a href="" title="">
-                                        <img class="lazy" data-original="upload/post-1.png" width="440" height="224">
+                                        <img src="upload/post-1.png">
                                     </a>
                                 </div>
                                 <div class="news_list_con clearfix">
@@ -662,7 +662,7 @@
                                 <li class="news clearfix">
                                     <div class="news_imgs">
                                         <a href="" title="">
-                                            <img class="lazy"  data-original="upload/post-1.png" width="435" height="222">
+                                            <img src="upload/post-1.png">
                                         </a>
                                     </div>
                                     <div class="news_list_con clearfix">
@@ -1326,10 +1326,7 @@
             //背景图片懒加载
             $("div.lazy").lazyload({
                 effect: "fadeIn",
-                threshold: 200
-            });
-            $("img.lazy").lazyload({
-                effect: "fadeIn"
+                threshold: 500
             });
         })
     </script>
