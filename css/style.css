@@ -294,9 +294,10 @@ a:hover {
 /* 字体 */
 @font-face {
     font-family: "iconfont"; /* Project id 2530521 */
-    src: url('../fonts/iconfont.woff2?t=1620694202217') format('woff2'),
-         url('../fonts/iconfont.woff?t=1620694202217') format('woff'),
-         url('../fonts/iconfont.ttf?t=1620694202217') format('truetype');
+    src:url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/iconfont.woff2?t=1620694236117') format('woff2'),
+         url('../fonts/iconfont.woff?t=1620694236117') format('woff'),
+         url('../fonts/iconfont.ttf?t=1620694236117') format('truetype');
   }
 .iconfont {
     font-family: "iconfont" !important;
@@ -820,7 +821,7 @@ a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    line-height: 1;
+    line-height: 1.5;
     height: auto;
     font-size: 18px;
     color: #131212;
@@ -838,6 +839,7 @@ a:hover {
 }
 
 .news_tu .news_list li.news .news_text a {
+    display: block;
     color: #898989;
     line-height: 1.5;
     text-overflow: -o-ellipsis-lastline;
@@ -846,6 +848,7 @@ a:hover {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    height: 36px;
 }
 
 .news_tu .news_list li.news .news_imgs,

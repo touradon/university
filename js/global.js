@@ -2,12 +2,10 @@ $(document).ready(function () {
 	// header
 	function autoheader(){
 		if($(window).scrollTop() > 0){
-			//$(".header").removeClass("dark").addClass("light");
 			$(".ld-header").removeClass("showdiv");
 			$(".fix-body").addClass("showdiv");
 		}
 		else{
-			//$(".header").addClass("dark").removeClass("light");
 			$(".fix-body").removeClass("showdiv");
 			$(".ld-header").addClass("showdiv");
 		}
@@ -36,10 +34,8 @@ $(document).ready(function () {
 		});
 		wow.init();
 	};
-});
 
 
-$(function () {
 	$(window).bind('mousewheel', function (event, delta, deltaX, deltaY) {
 		var scrollTop = $(window).scrollTop();
 		if (scrollTop == 0 && $('.fix-top').hasClass('fixed') && deltaY >= 0) {
@@ -64,5 +60,10 @@ $(function () {
 		}
 	});
 	$(window).scrollTop(0);
-});
 
+	// 浏览器兼容性判断
+	if (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE", "")) <= 9) {
+		document.getElementById('browser-modal').style.display = 'block';
+		console.log("您的浏览器版本过低，请使用IE10以上版本");
+	}
+});
