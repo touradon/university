@@ -19,7 +19,10 @@ $(document).ready(function () {
 	// banner
 	$('.banner-wrap').slick({
 		dots: true,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		lazyLoad: 'progressive',
+		autoplay: true,
+		autoplaySpeed: 4000
 	});
 
 
