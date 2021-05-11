@@ -471,9 +471,6 @@ a:hover {
 }
 
 /*默认主导航样式*/
-#nav {
-}
-
 /*导航*/
 #nav .inner .wp-panel .navbg {
   position: absolute;
@@ -786,9 +783,6 @@ a:hover {
 
 /* 列表内容 */
 /*图列表*/
-.news_tu .con {
-}
-
 .news_tu .news_list {
   margin-right: -20px;
   margin-left: -20px;
@@ -842,10 +836,6 @@ a:hover {
   padding: 30px 20px;
   background: #fff;
 }
-
-.news_tu .news_list li.news .news_wz {
-}
-
 .news_tu .news_list li.news .news_title {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1129,9 +1119,6 @@ a:hover {
   background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.section4 .sudy-tab {
 }
 
 .section4 .sudy-tab .tab-menu {
