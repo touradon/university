@@ -20,7 +20,7 @@ $(document).ready(function () {
 	$('.banner-wrap').slick({
 		dots: true,
 		adaptiveHeight: true,
-		lazyLoad: 'ondemand',
+		lazyLoad: 'progressive',
 		autoplay: true,
 		autoplaySpeed: 4000
 	});
