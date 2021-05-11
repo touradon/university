@@ -3,10 +3,10 @@ $(document).ready(function () {
 	function loading(){
 		$("#loading").fadeOut(400);
 		
-		//强制隐藏启动画面
-		// setTimeout(function(){
-		// 	$("#loading").fadeOut(400);
-		// },3000)
+		// 强制隐藏启动画面
+		setTimeout(function(){
+			$("#loading").fadeOut(400);
+		},3000)
 	}
 	// loading();
 	document.onreadystatechange = function(){ 
