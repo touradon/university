@@ -8,14 +8,12 @@ $(document).ready(function () {
 			$("#loading").fadeOut(400);
 		},3000)
 	}
-
-	
 	document.onreadystatechange = function(){ 
 		if(document.readyState == "complete"){ 
 			loading();
 		}
 	}
-
+	
 	// header
 	function autoheader(){
 		if( $(window).scrollTop() > 0 ){
