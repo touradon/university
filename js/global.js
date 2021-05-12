@@ -17,13 +17,11 @@ $(document).ready(function () {
 			}
 		});
 	}
-	
+	_lazyload();
 	// loading();
 	document.onreadystatechange = function(){ 
 		if(document.readyState == "complete"){ 
 			loading();
-			_lazyload();
-			console.log("loaded");
 		}
 	}
 
