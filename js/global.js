@@ -1,18 +1,19 @@
 $(document).ready(function () {
 	// loading效果
 	function loading(){
-		$("#loading").fadeOut(400);
+		// $("#loading").fadeOut(400);
 		
 		// 强制隐藏启动画面
 		setTimeout(function(){
 			$("#loading").fadeOut(400);
 		},3000)
 	}
-	document.onreadystatechange = function(){ 
-		if(document.readyState == "complete"){ 
-			loading();
-		}
-	}
+	loading();
+	// document.onreadystatechange = function(){ 
+	// 	if(document.readyState == "complete"){ 
+	// 		loading();
+	// 	}
+	// }
 
 	// header
 	function autoheader(){
