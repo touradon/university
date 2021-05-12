@@ -248,8 +248,8 @@
 
     <div class="banner">
         <div class="banner-wrap">
-            <div><a href=""><img data-src="upload/banner.jpg" alt=""></a></div>
-            <div><a href=""><img data-src="upload/banner2.jpg" alt=""></a></div>
+            <div><a href=""><img src="upload/banner.jpg" alt=""></a></div>
+            <div><a href=""><img src="upload/banner2.jpg" alt=""></a></div>
         </div>
     </div>
 
@@ -457,7 +457,7 @@
                             <li class="news clearfix">
                                 <div class="news_imgs">
                                     <a href="" title="">
-                                        <img data-src="upload/post-1.png">
+                                        <img class="lazy" data-original="./upload/post-1.png" width="440" height="224">
                                     </a>
                                 </div>
                                 <div class="news_list_con clearfix">
@@ -481,7 +481,7 @@
                             <li class="news clearfix">
                                 <div class="news_imgs">
                                     <a href="" title="">
-                                        <img  data-src="upload/post-3.png">
+                                        <img class="lazy" data-original="upload/post-3.png">
                                     </a>
                                 </div>
                                 <div class="news_list_con clearfix">
@@ -505,7 +505,7 @@
                             <li class="news clearfix">
                                 <div class="news_imgs">
                                     <a href="" title="">
-                                        <img data-src="upload/post-2.png">
+                                        <img class="lazy" data-original="upload/post-2.png">
                                     </a>
                                 </div>
                                 <div class="news_list_con clearfix">
@@ -1318,10 +1318,63 @@
             
             // $("img").lazyload({
             //     effect: "fadeIn",
-            //     threshold: 500
+            //     failure_limit : 20
             // });
 
-            
+            function throttle(fn, delay, atleast) {
+                var timeout = null,
+                startTime = new Date();
+                return function() {
+                var curTime = new Date();
+                clearTimeout(timeout);
+                if(curTime - startTime >= atleast) {
+                    fn();
+                    startTime = curTime;
+                }else {
+                    timeout = setTimeout(fn, delay);
+                }
+                }
+            }
+            // function _lazyload() {
+            //     var images = document.getElementsByTagName('img');
+            //     var len    = images.length;
+            //     var n      = 0;      //存储图片加载到的位置，避免每次都从第一张图片开始遍历		
+            //     return function() {
+            //         var seeHeight = document.documentElement.clientHeight;
+            //         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            //         for(var i = n; i < len; i++) {
+            //             if(images[i].offsetTop < seeHeight + scrollTop) {
+            //                 if(images[i].getAttribute('src') === 'images/loading.gif') {
+            //                     images[i].src = images[i].getAttribute('data-src');
+            //                 }
+            //             n = n + 1;
+            //             }
+            //         }
+            //     }
+            // }
+            // var loadImages = lazyload();
+            // loadImages();          //初始化首页的页面图片
+            // window.addEventListener('scroll', throttle(loadImages, 500, 1000), false);
+
+            function _lazyload(){
+                var images = $('.fix-body img, .sub-menu-pic img, .banner img');
+                var len    = images.length;
+                var n      = 0;      //存储图片加载到的位置，避免每次都从第一张图片开始遍历	
+                console.log(images);
+            	images.each(function(index, element) {
+                    var seeHeight = $(window).height();
+                    var scrollTop = $(window).scrollTop();
+                    for( var i = n; i < len; i++ ){
+                        if( images[i].offsetTop < seeHeight + scrollTop ){
+                            if($(this).attr("data-src")!="" && $(this).attr("data-src")!=undefined){
+                                $(this).attr("src",$(this).attr("data-src"));
+                                $(this).removeAttr('data-src');
+                            }
+                        }
+                    }
+            	});
+            }
+            _lazyload();
 
         })
     </script>

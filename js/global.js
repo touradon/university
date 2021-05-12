@@ -9,16 +9,7 @@ $(document).ready(function () {
 		},3000)
 	}
 
-	function _lazyload(){
-		$(".fix-body img, .sub-menu-pic img, .banner img").each(function(index, element) {
-			if($(this).attr("data-src")!="" && $(this).attr("data-src")!=undefined){
-				$(this).attr("src",$(this).attr("data-src"));
-				$(this).removeAttr('data-src');
-			}
-		});
-	}
-	_lazyload();
-	// loading();
+	
 	document.onreadystatechange = function(){ 
 		if(document.readyState == "complete"){ 
 			loading();
