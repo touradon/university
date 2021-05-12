@@ -627,7 +627,7 @@
         </div>
 
         <!-- 综合新闻 -->
-        <div class="section2 wrapper lazy" data-original="images/bg-2.jpg">
+        <div class="section2 wrapper lazyload" data-original="images/bg-2.jpg">
             <div class="inner clearfix">
                 <div class="ml wow animate__fadeInLeft" data-wow-duration="1.5s">
                     <div>
@@ -870,7 +870,7 @@
         </div>
 
         <!-- 临大学术 -->
-        <div class="section3 wrapper lazy" data-original="images/bg-3.jpg">
+        <div class="section3 wrapper lazyload" data-original="images/bg-3.jpg">
             <div class="inner">
                 <div class="tt clearfix">
                     <h3 class="tit wow animate__fadeInDown" data-wow-duration="1s">
@@ -993,7 +993,7 @@
         </div>
 
         <!-- Tab -->
-        <div class="section4 wrapper lazy" data-original="images/bg-4.jpg">
+        <div class="section4 wrapper lazyload" data-original="images/bg-4.jpg">
             <div class="inner">
                 <div class="mod clearfix">
                     <div class="sudy-tab">
@@ -1050,7 +1050,7 @@
         </div>
 
         <!-- 沂蒙精神 -->
-        <div class="section5 wrapper lazy" data-original="images/bg-5.jpg">
+        <div class="section5 wrapper lazyload" data-original="images/bg-5.jpg">
             <div class="inner">
                 <div class="sripit-title wow animate__fadeInLeft" data-wow-duration="1s"></div>
                 <div class="con news_tu">
@@ -1099,7 +1099,7 @@
         </div>
 
         <!-- 入读临大 -->
-        <div class="section6 wrapper admission lazy" data-original="images/bg-6.jpg">
+        <div class="section6 wrapper admission lazyload" data-original="images/bg-6.jpg">
             <div class="inner">
                 <div class="adm-title">
                     <p class="wow animate__fadeInDown" data-wow-duration="1s">ADMISSIONS</p>
@@ -1140,7 +1140,7 @@
         </div>
 
         <!-- 临大校训 -->
-        <div class="section7 wrapper motto lazy" data-original="images/bg-7.jpg">
+        <div class="section7 wrapper motto lazyload" data-original="images/bg-7.jpg">
             <div class="inner">
                 <ul class="motto-list clearfix">
                     <li class="motto-item">
@@ -1311,27 +1311,16 @@
     <script>
         $(document).ready(function(){
             //背景图片懒加载
-            $("div.lazy").lazyload({
+            $("div.lazyload").lazyload({
                 effect: "fadeIn",
                 threshold: 500
             });
             
             $("img.lazyload").lazyload({
                 effect: "fadeIn",
-                failure_limit : 20
+                failure_limit : 10
             });
-
-
-            // function _lazyload(){
-            // 	$(".fix-body img, .sub-menu-pic img, .banner img").each(function(index, element) {
-            // 		if($(this).attr("data-src")!="" && $(this).attr("data-src")!=undefined){
-            // 			$(this).attr("src",$(this).attr("data-src"));
-            // 			$(this).removeAttr('data-src');
-            // 		}
-            // 	});
-            // }
-            // _lazyload();
-
+            
         })
     </script>
 </body>

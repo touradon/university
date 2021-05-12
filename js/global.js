@@ -13,7 +13,7 @@ $(document).ready(function () {
 			loading();
 		}
 	}
-	
+
 	// header
 	function autoheader(){
 		if( $(window).scrollTop() > 0 ){
@@ -83,4 +83,14 @@ $(document).ready(function () {
 		document.getElementById('browser-modal').style.display = 'block';
 		console.log("您的浏览器版本过低，请使用IE10以上版本");
 	}
+
+	// function _lazyload(){
+	// 	$(".fix-body img, .sub-menu-pic img, .banner img").each(function(index, element) {
+	// 		if($(this).attr("data-src")!="" && $(this).attr("data-src")!=undefined){
+	// 			$(this).attr("src",$(this).attr("data-src"));
+	// 			$(this).removeAttr('data-src');
+	// 		}
+	// 	});
+	// }
+	// _lazyload();
 });
