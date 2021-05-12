@@ -10,7 +10,7 @@ $(document).ready(function () {
 	}
 
 	function _lazyload(){
-		$(".fix-body img, .sub-menu-pic img").each(function(index, element) {
+		$(".fix-body img, .sub-menu-pic img, .banner img").each(function(index, element) {
 			if($(this).attr("data-src")!="" && $(this).attr("data-src")!=undefined){
 				$(this).attr("src",$(this).attr("data-src"));
 				$(this).removeAttr('data-src');
@@ -18,8 +18,6 @@ $(document).ready(function () {
 		});
 	}
 	
-
-
 	// loading();
 	document.onreadystatechange = function(){ 
 		if(document.readyState == "complete"){ 
