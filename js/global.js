@@ -8,10 +8,23 @@ $(document).ready(function () {
 			$("#loading").fadeOut(400);
 		},3000)
 	}
+
+	function _lazyload(){
+		$(".fix-body img, .sub-menu-pic img").each(function(index, element) {
+			if($(this).attr("data-src")!="" && $(this).attr("data-src")!=undefined){
+				$(this).attr("src",$(this).attr("data-src"));
+				$(this).removeAttr('data-src');
+			}
+		});
+	}
+	
+
+
 	// loading();
 	document.onreadystatechange = function(){ 
 		if(document.readyState == "complete"){ 
 			loading();
+			_lazyload();
 			console.log("loaded");
 		}
 	}

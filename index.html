@@ -1327,18 +1327,15 @@
             $("div.lazy").lazyload({
                 effect: "fadeIn",
                 threshold: 500
-            }).removeClass('.lazy');
+            });
+            
+            // $("img").lazyload({
+            //     effect: "fadeIn",
+            //     threshold: 500
+            // });
 
+            
 
-            function _lazyload(){
-                $(".fix-body img, .sub-menu-pic img").each(function(index, element) {
-                    if($(this).attr("data-src")!="" && $(this).attr("data-src")!=undefined){
-                        $(this).attr("src",$(this).attr("data-src"));
-                        $(this).removeAttr('data-src');
-                    }
-                });
-            }
-            _lazyload();
         })
     </script>
 </body>
